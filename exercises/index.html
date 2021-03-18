@@ -5,15 +5,41 @@
     <title>HTML</title>
     <style>
 
+      body{
+        font-size: 16px;
+      }
+
         h1 {
             font-size: 65px;
             color: orange;
+            font-family: sans-serif;
         }
 
-        #listColor{
-            background-color: blue;
-           
+        p{
+            font-weight: 600;
+            font-size: 3em;
         }
+
+        .listStyle{
+            background-color: blue;
+            font-style: italic;
+            line-height: 30px;
+            text-align: initial;
+            text-decoration: underline;           
+        }
+
+        #listY{
+          color: yellow;
+        }
+
+        #listR{
+          color: red;
+        }
+
+        #listB{
+          color: brown;
+        }
+
 
         .corBoth{
             color: red;
@@ -24,10 +50,10 @@
   <body>
     <h1>Exercícios 3.2</h1>
     <p class="corBoth">Qual é a sua cor favorita?</p>
-    <ul id="listColor" class="corBoth">
-      <li>Amarelo</li>
-      <li>Vermelho</li>
-      <li>Marrom</li>
+    <ul class=" listStyle">
+      <li id="listY">Amarelo</li>
+      <li id="listR">Vermelho</li>
+      <li id="listB">Marrom</li>
     </ul>
 
  
