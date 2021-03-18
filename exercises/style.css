@@ -1,0 +1,40 @@
+
+      body{
+        font-size: 16px;
+      }
+
+        h1 {
+            font-size: 65px;
+            color: orange;
+            font-family: sans-serif;
+        }
+
+        p{
+            font-weight: 600;
+            font-size: 3em;
+        }
+
+        .listStyle{
+            background-color: blue;
+            font-style: italic;
+            line-height: 30px;
+            text-align: initial;
+            text-decoration: underline;           
+        }
+
+        #listY{
+          color: yellow;
+        }
+
+        #listR{
+          color: red;
+        }
+
+        #listB{
+          color: brown;
+        }
+
+
+        .corBoth{
+            color: red;
+        }
