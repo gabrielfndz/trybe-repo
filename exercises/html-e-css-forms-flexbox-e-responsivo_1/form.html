@@ -1,40 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/html-e-css-forms-flexbox-e-responsivo_1/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="node_modules/pikaday/css/pikaday.css">
 </head>
+
 <body>
-    <header>
+  <header>
 
-    </header>
-    <div>
-        <form method="GET">
-        <fieldset>
-            <legend>Dados Pessoais</legend>
-            
-                <label for="nameForm">Nome</label>
-                <input type="text" name="nome" maxlength="40" placeholder="Digite seu nome" id="nameForm" required>
-                <label for="emailForm">Email</label>
-                <input type="text" name="email" maxlength="50" placeholder="Digite seu email" id="emailForm" required>
-                <label for="CPF">CPF</label>
-                <input type="text" name="cpf" maxlength="11" placeholder="Digite seu CPF" id="CPF" required>
-                <label for="adressForm">Endereço</label>
-                <input type="text" name="adress" maxlength="200" placeholder="Digite seu endereço" id="adressForm" required>
-                <label for="uf">Selecione seu Estado</label>
-                <select>
+  </header>
+  <form method="GET">
+    <section class="section">
+      <div class="field">
+        <label class="label" for="nameForm">Nome</label>
+        <div class="control">
+          <input class="input" type="text" name="nome" maxlength="40" placeholder="Digite seu nome" id="nameForm"
+            required>
+        </div>
+      </div>
+      <div class="field">
+        <label class="label" for="emailForm">Email</label>
+        <div class="control">
+          <input class="input" type="text" name="email" maxlength="50" placeholder="Digite seu email" id="emailForm"
+            required>
+        </div>
+      </div>
+      <div class="field">
+        <label class="label" for="CPF">CPF</label>
+        <div class="control">
+          <input class="input" type="text" name="cpf" maxlength="11" placeholder="Digite seu CPF" id="CPF" required>
+        </div>
+      </div>
+      <div class="field">
+        <label class="label" for="adressForm">Endereço</label>
+        <div class="control">
+          <input class="input" type="text" name="adress" maxlength="200" placeholder="Digite seu endereço"
+            id="adressForm" required>
+        </div>
+      </div>
+      <div class="field">
+        <label class="label" for="uf">Selecione seu Estado</label>
+        <div class="control">
+          <select class="select">
 
-                </select>
-                <label></label>
-            
-        </fieldset>
-        <fieldset>
-            <legend>Experiência Profissional</legend>
+          </select>
+        </div>
+      </div>
+      <label></label>
+      </div>
 
-        </fieldset>
-    </form>
-    </div>
+      <div class="field">
+        <label for="cv-form">Resumo do currículo</label>
+        <div class="control">
+          <textarea class="textarea" id="cv-form" name="curriculo" maxlength="1000" cols="50" required></textarea>
+        </div>
+      </div>
+      <div class="field">
+        <label class="label" for="cargo-form">Cargo</label>
+        <div class="control">
+          <input class="input" type="text" name="cargo" id="cargo-form" maxlength="40" required>
+        </div>
+      </div>
+      <div class="field">
+        <label class="label" for="cargo-desc">Descrição do cargo</label>
+        <div class="control">
+          <input class="input" type="text" name="desc-cargo" id="cargo-desc" maxlength="500" required>
+        </div>
+      </div>
+      <div class="field">
+        <label class="label" for="datepicker">Data de início</label>
+        <div class="control">
+          <input class="input" type="text" name="data-inicio" id="datepicker" required>
+        </div>
+      </div>
+      </div>
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-link" type="submit">ENVIAR</button>
+        </div>
+        <div class="control">
+          <button class="button is-link is-light" type="reset">LIMPAR</button>
+        </div>
+      </div>
+    </section>
+  </form>
+  <script src="/html-e-css-forms-flexbox-e-responsivo_1/node_modules/pikaday/pikaday.js"></script>
+  <script src="/html-e-css-forms-flexbox-e-responsivo_1/script.js"></script>
 </body>
+
 </html>
