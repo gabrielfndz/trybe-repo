@@ -1,0 +1,55 @@
+body {
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;    
+    padding: 10px 0;
+}
+
+
+@media screen and (min-width: 920px) {
+  body {
+    background-color: #f6f6f6;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  figure {
+    display: flex;
+    flex-grow: 50%;
+
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+
+}
